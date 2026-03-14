@@ -1,0 +1,322 @@
+/* Background */
+
+.main{
+background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+}
+
+/* Login Box */
+
+.login-box{
+width:400px;
+margin:auto;
+margin-top:120px;
+padding:40px;
+border-radius:15px;
+background:rgba(255,255,255,0.05);
+backdrop-filter: blur(10px);
+box-shadow:0px 0px 30px rgba(0,0,0,0.5);
+text-align:center;
+animation: fadeIn 1s ease-in-out;
+}
+.title{
+font-size:36px;
+font-weight:700;
+margin-bottom:10px;
+}
+
+.subtitle{
+font-size:16px;
+color:#9ca3af;
+margin-bottom:20px;
+}
+
+
+/* Sidebar */
+
+section[data-testid="stSidebar"]{
+background: linear-gradient(180deg,#0f2027,#203a43,#2c5364);
+border-right:1px solid rgba(255,255,255,0.1);
+transition: all 0.4s ease;
+}
+
+section[data-testid="stSidebar"][aria-expanded="true"]{
+width: 300px;
+}
+
+section[data-testid="stSidebar"][aria-expanded="false"]{
+width: 70px;
+}
+
+/* Buttons */
+
+.stButton>button{
+border-radius:10px;
+transition:0.3s;
+}
+
+.stButton>button:hover{
+transform:scale(1.05);
+background:linear-gradient(90deg,#00c6ff,#0072ff);
+color:white;
+}
+
+/* Animation */
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(-20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+
+
+/*live ticker*/
+.ticker-container{
+width:100%;
+overflow:hidden;
+background:#111;
+border-bottom:1px solid #333;
+}
+
+.ticker{
+display:inline-block;
+white-space:nowrap;
+padding-left:100%;
+animation:ticker 50s linear infinite;
+color:#00ff9c;
+font-weight:bold;
+}
+
+@keyframes ticker{
+0%{transform:translateX(0%)}
+100%{transform:translateX(-100%)}
+}
+
+/* =========================
+MARKET SECTION
+========================= */
+
+.market-title{
+    font-size:28px;
+    font-weight:700;
+    margin-bottom:15px;
+    color:white;
+}
+
+/* Cards */
+
+.market-card{
+    background: linear-gradient(145deg,#1f2937,#111827);
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+}
+
+.market-card:hover{
+    transform: translateY(-5px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.7);
+}
+
+/* Gainers */
+
+.gainer{
+    font-size:18px;
+    font-weight:600;
+    color:#22c55e;
+    padding:6px 0;
+}
+
+/* Losers */
+
+.loser{
+    font-size:18px;
+    font-weight:600;
+    color:#ef4444;
+    padding:6px 0;
+}
+
+/* Titles */
+
+.card-title{
+    font-size:22px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+/* Heatmap Box */
+
+.heatmap-box{
+    background:#111827;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.5);
+    margin-top:25px;
+}
+
+/* Animation */
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(10px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.market-card{
+    animation: fadeIn 0.6s ease;
+}
+
+/* =========================
+RESPONSIVE DESIGN
+========================= */
+
+/* Tablets */
+
+@media (max-width:1024px){
+
+.login-box{
+width:80%;
+margin-top:80px;
+padding:30px;
+}
+
+.title{
+font-size:32px;
+}
+
+.subtitle{
+font-size:15px;
+}
+
+.market-title{
+font-size:24px;
+}
+
+.card-title{
+font-size:20px;
+}
+
+.market-card{
+padding:18px;
+}
+
+}
+
+
+/* Mobile Devices */
+
+@media (max-width:768px){
+
+.login-box{
+width:90%;
+margin-top:60px;
+padding:25px;
+}
+
+.title{
+font-size:26px;
+}
+
+.subtitle{
+font-size:14px;
+}
+
+.market-title{
+font-size:22px;
+}
+
+.card-title{
+font-size:18px;
+}
+
+.market-card{
+padding:16px;
+margin-bottom:15px;
+}
+
+.gainer,
+.loser{
+font-size:16px;
+}
+
+.heatmap-box{
+padding:15px;
+}
+
+.stButton>button{
+width:100%;
+font-size:16px;
+padding:10px;
+}
+
+.ticker{
+font-size:14px;
+}
+
+/* Sidebar smaller */
+
+section[data-testid="stSidebar"][aria-expanded="true"]{
+width:220px;
+}
+
+section[data-testid="stSidebar"][aria-expanded="false"]{
+width:60px;
+}
+
+}
+
+
+/* Small Android Phones */
+
+@media (max-width:480px){
+
+.login-box{
+width:95%;
+margin-top:40px;
+padding:20px;
+}
+
+.title{
+font-size:22px;
+}
+
+.subtitle{
+font-size:13px;
+}
+
+.market-title{
+font-size:20px;
+}
+
+.card-title{
+font-size:16px;
+}
+
+.market-card{
+padding:12px;
+}
+
+.gainer,
+.loser{
+font-size:14px;
+}
+
+.heatmap-box{
+padding:12px;
+}
+
+.ticker{
+font-size:12px;
+}
+
+}
