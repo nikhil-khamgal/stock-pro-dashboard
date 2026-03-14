@@ -183,11 +183,15 @@ These models analyze historical stock data to predict price trends.
 ## Login Page
 ![Login Page](assets/login.png)
 
+## Dashboard
+![Dashboard](assets/Market_Heatmap.png)
+
 ## Portfolio
 ![Portfolio](assets/portfolio.png)
 
-## Dashboard
-![Dashboard](assets/dashboard.png)
+## Live_price
+![Dashboard](assets/Live_price.png)
+
 
 # 🚀 Future Improvements
 
